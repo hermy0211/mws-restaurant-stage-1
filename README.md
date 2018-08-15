@@ -1,32 +1,45 @@
-# Mobile Web Specialist Certification Course
----
-#### _Three Stage Course Material Project - Restaurant Reviews_
+# Restaurant Reviews Project
 
-## Project Overview: Stage 1
+## Table of Contents
 
-For the **Restaurant Reviews** projects, you will incrementally convert a static webpage to a mobile-ready web application. In **Stage One**, you will take a static design that lacks accessibility and convert the design to be responsive on different sized displays and accessible for screen reader use. You will also add a service worker to begin the process of creating a seamless offline experience for your users.
-
-### Specification
-
-You have been provided the code for a restaurant reviews website. The code has a lot of issues. It’s barely usable on a desktop browser, much less a mobile device. It also doesn’t include any standard accessibility features, and it doesn’t work offline at all. Your job is to update the code to resolve these issues while still maintaining the included functionality. 
-
-### What do I do from here?
-
-1. In this folder, start up a simple HTTP server to serve up the site files on your local computer. Python has some simple tools to do this, and you don't even need to know Python. For most people, it's already installed on your computer. 
-
-In a terminal, check the version of Python you have: `python -V`. If you have Python 2.x, spin up the server with `python -m SimpleHTTPServer 8000` (or some other port, if port 8000 is already in use.) For Python 3.x, you can use `python3 -m http.server 8000`. If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
-
-2. With your server running, visit the site: `http://localhost:8000`, and look around for a bit to see what the current experience looks like.
-3. Explore the provided code, and start making a plan to implement the required features in three areas: responsive design, accessibility and offline use.
-4. Write code to implement the updates to get this site on its way to being a mobile-ready website.
-
-## Leaflet.js and Mapbox:
-
-This repository uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://www.mapbox.com/). You need to replace `<your MAPBOX API KEY HERE>` with a token from [Mapbox](https://www.mapbox.com/). Mapbox is free to use, and does not require any payment information. 
-
-### Note about ES6
-
-Most of the code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future proofing JavaScript code. As much as possible, try to maintain use of ES6 in any additional JavaScript you write. 
+* [Introduction](#introduction)
+* [Functionality](#functionality)
+* [Run](#run)
+* [Contributing](#contributing)
 
 
+## Introduction
 
+This is a basic restaurant review website for the New York area. You can filter the restaurants by neighborhood or cuisine, and view their location and reviews.
+
+
+## Functionality
+
+Basic functionality is built, including the following:
+
+- Basic HTML structure
+- Basic styling for the app
+- Successfully optimized for all types of devices and browser widths
+- Basic accessibility features built in (Focus, image alts and ARIA roles are well defined)
+- Service worker implemented (Caches data so you can use it offline)
+
+
+## Run
+
+1. Open the terminal.
+2. Clone the repository: `git clone https://github.com/hermy0211/mws-restaurant-stage-1.git`
+3. Open the directory to which you have cloned the repository.
+4. Check the version of Python you have: `python -V`
+5. If you have Python 2.x, spin up the server with `python -m SimpleHTTPServer 8000`. For Python 3.x, use `python3 -m http.server 8000`. If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
+6. Open the following webpage : `http://localhost:8000`
+
+
+## Contributing
+
+If you have any suggestions to improve this project, feel free to add a pull request and I will see if it seems fit!
+
+1. Fork the project to your own directory.
+2. Create a feature branch: `git checkout -b new-feature`
+3. Commit your changes: `git commit -m "Explain Feature"`
+4. Push to the branch: `git push origin new-feature`
+5. Submit a pull request.
